@@ -1,0 +1,368 @@
+\documentclass{worksheetclass}
+
+\usepackage{import}
+\import{}{custom_macros.tex}
+
+\title{Geometry and quotients}
+
+% DOCUMENT -----------------------------
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Symplectic manifolds}
+
+    \subsection{Symplectic structure}
+    
+        \begin{defn}
+            A $2$-form $\omega$ on $M$ is said to be \emph{non-degenerate}\index{non-degenerate form} if is satisfies the following property: if there exists $X_p\in T_pM$ such that $\omega(X_p,Y_p)=0$ for all $Y_p\in T_pM$ then $X_p=0$.
+        \end{defn}
+        
+        \begin{prop}
+            A $2$-form $\omega$ is non-degenerate if and only if the matrix formed by its components $\omega_{ab}$ such that
+            \begin{equation*}
+                \omega=\omega_{ab}\d x^a\wedge\d x^b
+            \end{equation*}
+            is invertible.
+        \end{prop}
+        
+        In odd dimensions, skew-symmetric matrices are always singular, the requirement that $\omega$ be non-degenerate therefore implies that $M$ must have even dimension.
+    
+        \begin{defn}
+            A \emph{symplectic form}\index{symplectic form} $\omega$ on a smooth manifold $M$ is a closed non-degenerate $2$-form. $(M,\omega)$ is then called a \emph{symplectic manifold}\index{manifold!symplectic}\index{symplectic manifold}.
+        \end{defn}
+        The infinitesimal version of symplectomorphisms gives the symplectic vector fields.
+        \begin{defn}
+            A vector field $X\in\mathfrak{X}(M)$ is called \emph{symplectic}\index{symplectic vector field} if
+            \begin{equation*}
+                \L_X\omega = 0.
+            \end{equation*}
+        \end{defn}
+        \begin{prop}
+            $X\in\mathfrak{X}(M)$ is symplectic if and only if the flow $\phi_t:M\to M$ is a symplectomorphism for every $t\in R$.
+        \end{prop}
+        These vector fields form a Lie subalgebra of $\mathfrak{X}(M)$.
+
+        \begin{defn}
+            A diffeomorphism between two symplectic manifolds $f:(M,\omega)\to(M',\omega')$ is called a \emph{symplectomorphism}\index{symplectomorphism} is
+            \begin{equation*}
+                f^*\omega' = \omega.
+            \end{equation*}
+            The sumplectomorphisms from $M$ to $M$ form a pseudo-group callde theb\emph{symplectomorphism group}\index{symplectomorphism group}.
+        \end{defn}
+
+        \begin{defn}
+            Let $(M,\omega)$ be a symplectic manifold and $G$ a group. We say that an action $\phi:G\times M\to M$ is \emph{symplectic}\index{symplectic action} each map $\phi(g,\cdot)$ is a symplectomorhphism.
+        \end{defn}
+
+    \subsection{Momentum map}\label{sec:momentummap}
+
+        Let $(M,\omega)$ be a symplectic manifold and $\cdot:G\times M\to M$ a symplectic action of $G$ on $M$. If $\g$ is the Lie algebra of $G$, let
+        \begin{equation}
+            \langle\cdot,\cdot\rangle : \g^*\times\g\to\R
+        \end{equation}
+        be the canonical pairing between $\g$ and $\g^*$. Any $\xi\in\g$ induces a vector field $\rho(\xi)\in\mathfrak{X}(M)$ on $M$ describing the infinitesimal action of $\xi$. More precisely, at a point $p\in M$ the tangent vector $\rho(\xi)_p$ is defined as
+        \begin{equation}
+            \rho(\xi)_p\equiv\eval{\dv{}{t}}_{t=0}(\exp(t\xi)\cdot p),
+        \end{equation}
+        where $\exp:\g\to G$ is the exponential map. Let $\iota_{\rho(\xi)}\omega$ denotes the contraction of this vector field with $\omega$. Because $G$ acts by symplectomorphisms ($\cdot$ is a symplectic action), it follows that $\iota_{\rho(\xi)}\omega$ is closed for all $\xi\in\g$. 
+        
+        Suppose that $\iota_{\rho(\xi)}\omega$ is not just closed but also exact, so that
+        \begin{equation}
+            \iota_{\rho(\xi)}\omega= \d H_{\xi}
+        \end{equation}
+        for some function $H_{\xi}\in C^\infty(M,\R)$. Suppose also that the map
+        \begin{equation}
+            H:\left(
+            \begin{array}{ccc}
+                    \g & \longrightarrow & C^\infty(M,\R) \\
+                    \xi & \longmapsto & H_\xi
+            \end{array}
+            \right)
+        \end{equation}
+        is a Lie algebra homomorphism, $C^\infty(M,\R)$ being understood as provided with the Poisson bracket. We then have the following definition.
+        \begin{defn}
+            A \emph{momentum map}\index{momentum map} for the action of $G$ on $(M,\omega)$ is a map
+            \begin{equation}
+                \mu:M\to\g^*
+            \end{equation}
+            such that $\d(\langle \mu,\xi\rangle)=\iota_{\rho(\xi)}\omega$ for all $\xi\in\g$. Here $\langle \mu,\xi\rangle$ is the function from $M$ to $\R$ defined by $\langle \mu,\xi\rangle(p)\equiv\langle \mu(p),\xi\rangle$.
+        \end{defn}
+        The momentum map is uniquely defined up to an additive constant of integration. A momentum map is often also required to be $G$-equivariant, where $G$ acts on $\g^*$ via the coadjoint action (dual of the adjoint action). If the group is compact or semisimple, then the constant of integration can always be chosen to make the momentum map coadjoint equivariant. However, in general the coadjoint action must be modified to make the map equivariant (this is the case for example for the Euclidean group). The modification is by a 1-cocycle on the group with values in $\g^*$.
+
+    \subsection{Hamiltionian group actions}
+
+        The definition of the momentum map requires $\iota_{\rho(\xi)}\omega$ to be closed. In practice it is useful to make an even stronger assumption.
+        \begin{defn}
+            The $G$-action is said to be \emph{Hamiltonian}\index{Hamiltonian group action} if and only if the following conditions hold:
+            \begin{itemize}
+                \item for every $\xi\in\g$ the one-form $\iota_{\rho(\xi)}\omega$ is exact, meaning that it equals $\d H_{\xi}$ for some function $H_\xi\in C^\infty(M,\R)$. If this holds, then one may choose the $H_\xi$ to make the map $H:\xi\mapsto H_\xi$ linear.
+                \item the map $H:\xi\mapsto H_\xi$ is a Lie algebra homomorphism from $\g$ to $C^\infty(M,\R)$, the algebra of smooth function on $M$ with the Poisson bracket.
+            \end{itemize}
+        \end{defn}
+
+        If the action of $G$ on $(M,\omega)$ is Hamiltionian in this sense, then a momentum map is a map
+        \begin{equation}
+            \mu:M\to\g^*
+        \end{equation}
+        such that writing $H_\xi=\langle\mu,\xi\rangle$ defines a Lie algebra homomorphism $H:\xi\mapsto H_\xi$ satisfying $\rho(\xi)=X_{H_\xi}$. Here $X_{H_\xi}$ is the vector field of the Hamiltonian $H_\xi$, defined by
+        \begin{equation}
+            \iota_{X_{H_\xi}}\omega=\d H_\xi.
+        \end{equation}
+
+        \begin{examp}
+            In the case of the Hamiltonian action of the circle $G=\U(1)$, the Lie algebra dual $\g^*$ is naturally identified with $\R$, and the momentum map is simply the Hamiltonian function that generates the circle action.
+        \end{examp}
+
+    \subsection{Symplectic quotient}\label{sec:symplecticquotient}
+
+        Suppose that the action of a compact Lie group $G$ on the symplectic manifold $(M,\omega)$ is Hamiltonian, as defined above, with momentum map $\mu:M\to\g^*$. From the Hamiltonian condition it follows that $\mu^{-1}(0)$ is invariant under $G$.
+
+        Assume now that $0$ is regular value of $\mu$ and that $G$ acts freely and properly on $\mu^{-1}(0)$. Thus $\mu^{-1}(0)$ and its quotient $\mu^{-1}(0)/G$ are both manifolds. The quotient inherits a symplectic form from $M$; that is, there is a unique symplectic form on the quotient whose pullback to $\mu^{-1}(0)$ equals the restriction of $\omega$ to $\mu^{-1}(0)$. Thus the quotient is a symplectic manifold.
+
+        \begin{defn}
+            The symplectic manifold $\mu^{-1}(0)/G$ is called \emph{symplectic quotient}\index{symplectic quotient} (also called \emph{Marsden-Weinstein quotient}\index{Marsden-Weinstein quotient} or \emph{symplectic reduction}\index{symplectic reduction}) of $M$ by $G$ and is denoted $M//G$\index{$//$}.
+        \end{defn}
+        Its dimension equals the dimension of $M$ minus twice the dimension of $G$:
+        \begin{equation}
+            \dim(M//G)=\dim M-2\dim G.
+        \end{equation}
+
+\section{Kähler manifolds}
+
+\subsection{Kähler manifolds}
+
+    \subsection{Kähler structure}
+
+        \begin{defn}
+            An almost complex structure $J$ is said to be \emph{compatible}\index{almost complex structure!compatible} with the symplectic $\omega$ if 
+            \begin{equation*}
+                \omega(JX,JY) = \omega(X,Y)
+            \end{equation*}
+            for all $X,Y\in TM$.
+        \end{defn}
+        Compatible almost complex structure are very important because it means that the bilinear form $g$ on the tangent space of $M$ defined as
+        \begin{equation}
+            g(X_p,Y_p)=\omega(X_p,JY_p)
+        \end{equation}
+        is symmetric and positive-definite. In other words, $g$ is a riemannian metric. Given a symplectic structure and a compatible almost complex structure therefore naturally provides us with a riemannian structure too. The component of the metric are, logically, fully determined by the ones of the symplectic form:
+        \begin{equation}
+            g_{a\bar{b}}=\p_a\p_{\bar{b}}K
+        \end{equation}
+        in terms of local holomorphic coordinates $(z^a,\bz^a)$ and were $K$ defines the symplectic form (see \eqref{eq:Kählerpot}). For such a metric, one can show that the only non-vanishing coefficient of the Levi-Civita connection are
+        \begin{align}
+            \Gamma^a_{bc} &= g^{a\bar{d}}\p_bg_{c\bar{d}},\\
+            \Gamma^{\bar{a}}_{\bar{b}\bar{c}} &= g^{\bar{a}d}\p_{\bar{b}}g_{d\bar{c}}.
+        \end{align}
+        
+        The condition $\omega(JX,JY)=\omega(X,Y)$ also says that under the decomposition
+        \begin{equation}
+            \Omega^2(M) = \Omega^{2,0}\oplus\Omega^{1,1}\oplus\Omega^{0,2}
+        \end{equation}
+        of $2$-forms into their holomorphic and antiholomorphic parts, the symplectic form $\omega$ actually lies in $\Omega^{1,1}$.
+    
+        \begin{defn}
+            A \emph{Kähler manifold}\index{manifold!Kähler} is a symplectic manifold equipped with a compatible, integrable almost complex structure.
+        \end{defn}
+        A Kähler manifold is therefore the union of three structures: a riemannian structure, a symplectic structure and a complex structure. It is the fact the we are provided with a compatible complex structure that allows us to construct a metric from the symplectic form. We can therefore use the three points of view at will.
+        
+        For real manifolds, the Poincaré lemma states that any closed form is locally exact. On a complex manifold, we have the decomposition
+        \begin{equation}
+            \d= \p + \bp
+        \end{equation}
+        into the exterior derivative in the holomorphic and antiholomorphic directions.
+        \begin{examp}
+            If $M=\R^2=\C$, we have
+            \begin{equation}
+                \d=\d x \pdv{}{x}+\d y \pdv{}{y} = \d z\pdv{}{z}+\d\bz\pdv{}{\bz}=\p+\bp
+            \end{equation}
+            where $\d z=\d x+i\d y$ and $\d\bz =\d x+i\d y$.
+        \end{examp}
+        In particular, we have
+        \begin{equation}
+            0 = \d^2 = \p^2 + (\p\bp+\bp\p) + \bp^2
+        \end{equation}
+        but these operators lies in different space:
+        \begin{align}
+            \p^2&:\Omega^{p,q}\to\Omega^{p+2,q},\\
+            \p\bp+\bp\p&:\Omega^{p,q}\to\Omega^{p+1,q+1},\\
+            \bp^2&:\Omega^{p,q}\to\Omega^{p,q+2}
+        \end{align}
+        so they must be zero separately:
+        \begin{equation}
+            \p^2=0,\qquad \p\bp+\bp\p=0,\qquad \bp^2=0.
+        \end{equation}
+        In particular, for a closed form $\omega$, one must have $\p\omega=0$ and $\bp\omega=0$ separately. Combined with the Poincaré lemma, on finds that the symplectic form can always be locally written as
+        \begin{equation}\label{eq:Kählerpot}
+            \omega = i\p\bp K 
+        \end{equation}
+        for some function $K$, on the Kähler manifold. Notice that $K$ is defined up to the transformations
+        \begin{equation}
+            K(z,\bz)\mapsto K(z,\bz)+f(z)+f(\bz)
+        \end{equation}
+        where $f$ is holomorphic.
+        \begin{defn}
+            The function $K$ locally defining the symplectic form on a Kähler manifold as in (\ref{eq:Kählerpot}) is called the \emph{Kähler potential}\index{Kähler potential}.
+        \end{defn}
+        \begin{result}
+            A symplectic structure on a complex manifold implies that the symplectic form necessarily comes from a Kähler potential. The latter is defined up to translation by holomorphic or antiholomorphic functions.
+        \end{result}
+        
+        \begin{examp}
+            Let us treat $\C^n$ as a Kähler manifold. The Kähler potential associated to the flat metric
+            \begin{equation}
+                g = \sum_a \left( (\d x)^2+(\d y)^2 \right) = \sum_a \delta_{a\bar{a}}\d z^a\d\bz^{\bar{a}}
+            \end{equation}
+            on $\R^{2n}$ is
+            \begin{equation}
+                K(z,\bz) = \sum_a\abs{z^a}^2
+            \end{equation}
+            and the symplectic form is
+            \begin{equation}
+                \omega = \sum_i \d x^i\wedge\d y^i = \sum_a \delta_{a\bar{a}}\d z^a\wedge\d\bz^{\bar{a}}.
+            \end{equation}
+        \end{examp}
+
+        \begin{examp}
+            We can also treat $\C\mathbb{P}^n$ as a Kähler manifold with the Kähler potential
+            \begin{equation}
+                K(z,\bz) = \ln\left( 1+\sum^n_{a=1}\abs{z^a}^2 \right)
+            \end{equation}
+            on the coordinate patch $\C^n\subset\C\mathbb{P}^n$ (it covers the complement of an hyperplane in $\C\mathbb{P}^n$). The resulting metric is called the \emph{Fubini-Study metric}\index{Fubini-Study metric}.
+        \end{examp}
+
+    \subsection{Kähler quotients}
+
+\section{Hyperkähler manifolds}
+
+    \subsection{Hyperhähler structure}
+
+        A hyperkähler manifold is a manifold (necessarily of dimension a multiple of four) which admits an action on the tangent space of the $i,j$ and $k$ (quaternions) in a manner which is compatible with the metric.
+        \begin{defn}
+            A \emph{hyperkähler manifold}\index{hyperkähler manifold} is a riemannian manifold $(M,g)$ provided with three orthogonal automorphisms $I,J,K:TM\to TM$ of the tangent bundle that are covariant constant with respect to the Levi-Civita connection, i.e.
+            \begin{equation*}
+                \nabla I=\nabla J=\nabla K = 0,
+            \end{equation*}
+            and which satisfy the quaternionc identities
+            \begin{equation*}
+                I^2=J^2=K^2=IJK = -1.
+            \end{equation*}
+        \end{defn}
+        These condition imply in particular
+        \begin{itemize}
+            \item each these tangent bundle automorphisms define an integrable complex structure on $M$;
+            \item the metric $g$ is Kähler with respect to all three;
+            \item the three Kähler forms $\omega_1,\omega_2$ and $\omega_3$ are therefore closed and give three symplectic structures on $M$.
+        \end{itemize}
+
+        We can also have the following, equivalent, definition in terms of $G$-structure:
+        \begin{defn}
+            The \emph{symplectic group}\emph{symplectic group} $\Sp(2n,F)$\index{$\Sp$} is a classical group defined as the set of linear transformations that of a $2n$-dimensional symplectic vector space $V$ over the field $F$ which preserve the non-degenerate skew-symmetric bilinear form (symplectic point at a point). If the latter is denoted $\Omega$, then
+            \begin{equation*}
+                \Sp(2n,F)\equiv\{M\in M_{2n\times2n}(F)|m^T\Omega M=\Omega\}.
+            \end{equation*}
+            We use the notation $\Sp(n)\equiv\Sp(n,\R)$.
+        \end{defn}
+        In the case where
+        \begin{equation}
+            \Omega=
+            \begin{bmatrix}
+                0 & \mathbbm{1}_n \\
+                \mathbbm{1}_n & 0
+            \end{bmatrix},
+        \end{equation}
+        we have $\Sp(2n,F)=\SL(2,F)$.
+        \begin{defn}[alternative definition]
+            A \emph{hyperkähler manifold}\index{hyperkähler manifold} is a quaternionic manifold with a torsion-free $\Sp(n)$-structure. 
+        \end{defn}
+        A hyperkähler manifold is simultaneously a hypercomplex manifold and a quaternionic Kähler manifold. From this definition, every hyperkähler manifold $M$ has a $2$-sphere of complex structures (i.e. integrable almost complex structures) with respect to which the metric is Kähler. In particular, it is a hypercomplex manifold, meaning that there are three distinct complex structures, $I, J$, and $K$, which satisfy the quaternion relations
+        \begin{equation}
+            I^2=J^2=K^2=IJK=-1.
+        \end{equation}
+        Thus closing the loop with our first definition.
+
+        \begin{remark}
+            Recall that a riemannian manifold provided withjust one such automorphism of the tangent bundle is a Kähler manifold. The name ``hyperkähler'' comes from the fact that the metric is Kählerian for several complex strctures. There is, however, an essential difference bewteen Kähler and hyperkähler manifolds. A Kähler matric on a given complex manifold  can be modofied to another Kähler metric simply by adding a hermician form $\p\bp f$ to the initial metric, for a sufficiently small smooth function $f$. Thus the space of Kähler metrics is infinite-dimensional. It is morevoer easy to find examples of Kähler manifolds. For example, any complex submanifold of $\C\P^n$ inherits a Kähler metric. By contrast, hyperkähler metrics are much more rigid. On a compact manifold, if one such emtric exists, then up to isometry there is only a finite-dimensional space of them. Nor is it easy to find examples. Certainly we wil never find then as queternionic submanifolds of the quaternionc projective space $\mathbb{H}\P^n$.
+        \end{remark}
+        The group $\Sp(n)$ is also an intersection of $\U(2n)$ and $\Sp(2n\C)$, the transformations of $\C^{2n}$ which preserve a non-degenrate skew-symmetric form. Thus a hyperkähler manifold is naturally a complex manifold with a holomorphic sympectic form. One can see this explicitely by taking three Kähler two-forms
+        \begin{align}
+            \omega_1(X,Y) &= g(IX,Y)\\
+            \omega_2(X,Y) &= g(JX,Y)\\
+            \omega_3(X,Y) &= g(KX,Y)\\
+        \end{align}
+        defined for the complex strcture $I,J$ and $K$. With repsect tothe complex structure $I$, the complex form
+        \begin{equation}
+            \omega_c \equiv \omega_2+i\omega_3
+        \end{equation}
+        is non-degenerate and covaraint constant, hence closed and holomorphic.
+
+        This point of view provides guidance in the search of exmaples of hyperkähler manifodls, and elucidates the sort of differential equation which needs to be solved. In the first place the holomorphic volume form $\omega_c^n$ must give a covariant constant trvialization of the canonical line bundle. The curvature of this bundl for any Kähler matric is the Ricci form and so hyperkähler metric has in particular vanishing tensor.
+        \begin{prop}
+            All hyperkähler manifolds are Ricci-flat.
+        \end{prop}
+        In the lowest dimension, i.e. four dimensions, this means that such metrics satisfy the riemannian version of the Einstein vacuum equations. We have the even more useful result:
+        \begin{prop}
+            In four dimensions, a simply connected riemannain manifold admit a hyperkähler metric if the riemannian curvature tensor is either self-dual or anti-self-dual.
+        \end{prop}
+        Consequently, a complete hyperkähler $4$-manifold is a self-dual, euclidean, solution to Einstein's equations. This is very usefull to construct ALE spaces, see section \ref{sec:ALEhyperkahlerquot}.
+
+        Given a compact Kähler manifold with holomorphically trivial canonical line bundle, the Calabi-Yau theorem provides the existence of a Kähler matric with vanishing Ricci tensor. Futhermore, a mush older theorem (Bochner) shows that any holomoprhic form on a compact Kähler manifold with zero Ricci tensor is covariant constant. Therefore, for every copact Kähler manifold  with a holomorphic symplectic form, an apllication of these two theorems yields a hyperkähler metric on the same manifold. This satisfactiry state of affairs can be used the prove the existence of hyperkähleron many exmaples of complex manifolds. The must fundamental is the $K3$ surface -- the only non-trivial example in four realdimensions. In higher dimensions, the Hilbert scheme of zero cycles on a $K3$-surface or a $2$-dimensional complex torus yields anatural class of holomorphic symplectic manifolds and hence hyperkähler metrics.
+
+        \begin{theorem}[Kurnosov, Soldatenkov, Verbitsky]
+            The cohomology of any compact hyperkähler manifold embeds into the cohomology of a torus, in a way that preserves the Hodge structure.
+        \end{theorem}
+
+        \begin{result}
+            \textbf{Hyperkähler manifolds.} A hyperkähler manifold is a manifold which admits an action on the tangent space of the $i,j$ and $k$ in a manner which is compatible with the metric. All hyperkähler manifolds and are Ricci-flat so in four dimensions (lowest dimension for a hyperkähler manifold), this means that the metric satisfies the euclidean version of the Einstein vacuum equations. Morevover, in four dimensions, a simply connected riemannain manifold admit a hyperkähler metric if the riemannian curvature tensor is either self-dual or anti-self-dual.
+        \end{result}
+
+        We shall seek something more than existence. We would like to construct solutions in a more explicit manner, in order to gain better understanding of hyperkähler manifolds and to experience the richness of their geometry. There are two main routes to constructing hyperkähler metrics:
+        \begin{enumerate}
+            \item \textbf{Twistor theory.} This approch is based on R. Penrose's original work in relativity. It provides an encoding of the date for such a metric in terms of holomorphic geometry.Deriving global properties of the metric such as completeness is almost impossible. On the other hand, the quotient construction yields this sort of property quite easily, even if it is not as general as the twistor method.
+            \item \textbf{Hyperkähler quotients.} This construction arose also out of questions of mathematical physics, in this case supersymmetry. In practical terms there are two ways of using it. The first is a finite-dimensional construction, whereby determining the actual metric involves solving algebraic equations. The second involves the use of the method in infinite dimensions, even though the quotient itself may be finite-dimensional. Here, one needs to solve differential equations to find the metric. They are, however, equations for which in many cases methods of solution are known so that we have in principle more information than an existence theorem.
+        \end{enumerate}
+
+        We shall illustrate these constructions by a representative collection of examples which are chosen according to our guiding principle of seeking complex symplectic manifolds. These hyperkähler manifolds are all a priori complex manifolds with holomorphic symplectic forms:
+        \begin{itemize}
+            \item resolution of rational surface singularities;
+            \item coadjoint orbits of complex Lie groups;
+            \item spaces of representations of a surface group in a complex Lie group;
+            \item space of based loops in complex Lie group.
+        \end{itemize}
+        The construction of hyperkahler metrics on these spaces is contained in the work of P. B. Kronheimer, S. K. Donaldson, and others. What is perhaps remarkable is that these diverse spaces nearly all inherit a hyperkahler metric through special cases of solutions to the anti-self-dual Yang-Mills equations in $\R^4$. Those physically motivated equations themselves are ultimately based on the identification of $\R^4$ with the quaternions. Hamilton's ghost may yet rest content.
+
+    \subsection{Hyperkähler quotients}
+
+        We saw the definition of the quotient manifold (section \ref{sec:quotmanifold}), the symplectic quotient (section \ref{sec:symplecticquotient}) and the Kähler quotient (section \ref{sec:quotkahler}), we now see the hyperkähler quotient.
+
+        The quotient construction emphasizes not the complex structures but instead the corresponding Kähler forms $\omega_1,\omega_2$ and $\omega_3$. In this case, by contraction with the inverse forms on cotangent vectors, we can recover $I,J$ and $K$ and the metric itself. Put another way, $\Sp(n)$ is the stabilizer of $\omega_1, \omega_2, \omega_3$ whereas $\GL(n, H)$ is the stabilizer of $I,J,K$.
+
+        A hyperkahler manifold can be characterized in a very straightforward manner using these forms:
+        \begin{theorem}
+            Let $M^{4n}$ be a manifold with $2$-forms $\omega_1,\omega_2,\omega_3$ whose stabiliser in $\GL(4,\R)$ at each point $p\in M$ is conjugate to $\Sp(n)$. Then the forms define a hyperkähler structure if and only if they are closed.
+        \end{theorem}
+        This theorem places the theory of hyperkahler manifolds firmly within the context of symplectic geometry.
+
+        Hyperkähler quotient is modelled on the symplectic quotient (see section \ref{sec:symplecticquotient}). Recall that if $(M,\omega)$ is a symplectic manifold with symplectic action of Lie group $G$, then under mild assumptions one can define an momentum map (see section \ref{sec:momentummap})
+        \begin{equation}
+            \mu:M\to\mathfrak{g}^*
+        \end{equation}
+        The symplectic quotient construction consists of a new symplectic manifold $M//G\equiv\mu^{-1}(0)/G$. The same kind of manipulation can be done for hyperkähler manifolds.
+
+        Suppose that $M$ is a hyperkähler manifolds, with Lie group $G$ acting so as to preserve the three Kähler forms $\omega_1,\omega_2$ and $\omega_3$. We obtain three moment maps $\mu_1,\mu_2$ and $\mu_3$, or equivalently a vector-valued moment map
+        \begin{equation}
+            \mu:M\to\mathfrak{g^*}\otimes\R^3,
+        \end{equation}
+        called the \emph{hyperkähler moment map}\index{hyperkähler moment map}.
+        \begin{theorem}
+            Let $\mathfrak{z}\subseteq\g^*$ be the set of $G$-invariant elements of $\g^*$. If $\zeta\in\mathfrak{z}\otimes\R^3$ is a regular value for the hyperkähler moment map $\mu$, then $\mu^{-1}(\zeta)/G$ is a hyperkähler manifold.
+        \end{theorem}
+        Note that
+        \begin{equation}
+            \dim(\mu^{-1}(\zeta)/G) = \dim M - 4\dim G.
+        \end{equation}
+
+\end{document}
