@@ -13,6 +13,8 @@
 
 \tableofcontents
 
+\pagebreak
+
 \section{Symplectic manifolds}
 
     \subsection{Symplectic structure}
@@ -22,11 +24,7 @@
         \end{defn}
         
         \begin{prop}
-            A $2$-form $\omega$ is non-degenerate if and only if the matrix formed by its components $\omega_{ab}$ such that
-            \begin{equation*}
-                \omega=\omega_{ab}\d x^a\wedge\d x^b
-            \end{equation*}
-            is invertible.
+            A $2$-form $\omega$ is non-degenerate if and only if the matrix formed by its components $\omega_{ab}$ such that $\omega=\omega_{ab}\d x^a\wedge\d x^b$ is invertible.
         \end{prop}
         
         In odd dimensions, skew-symmetric matrices are always singular, the requirement that $\omega$ be non-degenerate therefore implies that $M$ must have even dimension.
@@ -34,7 +32,10 @@
         \begin{defn}
             A \emph{symplectic form}\index{symplectic form} $\omega$ on a smooth manifold $M$ is a closed non-degenerate $2$-form. $(M,\omega)$ is then called a \emph{symplectic manifold}\index{manifold!symplectic}\index{symplectic manifold}.
         \end{defn}
-        The infinitesimal version of symplectomorphisms gives the symplectic vector fields.
+        \begin{defn}
+            A diffeomorphism between two symplectic manifolds $f:(M,\omega)\to(M',\omega')$ is called a \emph{symplectomorphism}\index{symplectomorphism} if $f^*\omega' = \omega$. The set of symplectomorphisms from $M$ to $M$ form a pseudo-group\footnote{A pseudo-group is a set of diffeomorphisms between open sets of a space, satisfying group-like and sheaf-like properties. It is a generalisation of the concept of a group.}, called the \emph{symplectomorphism group}\index{symplectomorphism group}.
+        \end{defn}
+
         \begin{defn}
             A vector field $X\in\mathfrak{X}(M)$ is called \emph{symplectic}\index{symplectic vector field} if
             \begin{equation*}
@@ -42,23 +43,15 @@
             \end{equation*}
         \end{defn}
         \begin{prop}
-            $X\in\mathfrak{X}(M)$ is symplectic if and only if the flow $\phi_t:M\to M$ is a symplectomorphism for every $t\in R$.
+            A vector field $X\in\mathfrak{X}(M)$ is symplectic if and only if its flow $\phi_t:M\to M$ is a symplectomorphism for every $t\in R$.
         \end{prop}
-        These vector fields form a Lie subalgebra of $\mathfrak{X}(M)$.
-
-        \begin{defn}
-            A diffeomorphism between two symplectic manifolds $f:(M,\omega)\to(M',\omega')$ is called a \emph{symplectomorphism}\index{symplectomorphism} is
-            \begin{equation*}
-                f^*\omega' = \omega.
-            \end{equation*}
-            The sumplectomorphisms from $M$ to $M$ form a pseudo-group callde theb\emph{symplectomorphism group}\index{symplectomorphism group}.
-        \end{defn}
+        This means that the infinitesimal version of symplectomorphisms are symplectic vector fields. These vector fields form a Lie subalgebra of $\mathfrak{X}(M)$.
 
         \begin{defn}
             Let $(M,\omega)$ be a symplectic manifold and $G$ a group. We say that an action $\phi:G\times M\to M$ is \emph{symplectic}\index{symplectic action} each map $\phi(g,\cdot)$ is a symplectomorhphism.
         \end{defn}
 
-    \subsection{Momentum map}\label{sec:momentummap}
+    \subsection{Group action}
 
         Let $(M,\omega)$ be a symplectic manifold and $\cdot:G\times M\to M$ a symplectic action of $G$ on $M$. If $\g$ is the Lie algebra of $G$, let
         \begin{equation}
@@ -68,72 +61,86 @@
         \begin{equation}
             \rho(\xi)_p\equiv\eval{\dv{}{t}}_{t=0}(\exp(t\xi)\cdot p),
         \end{equation}
-        where $\exp:\g\to G$ is the exponential map. Let $\iota_{\rho(\xi)}\omega$ denotes the contraction of this vector field with $\omega$. Because $G$ acts by symplectomorphisms ($\cdot$ is a symplectic action), it follows that $\iota_{\rho(\xi)}\omega$ is closed for all $\xi\in\g$. 
-        
-        Suppose that $\iota_{\rho(\xi)}\omega$ is not just closed but also exact, so that
-        \begin{equation}
-            \iota_{\rho(\xi)}\omega= \d H_{\xi}
-        \end{equation}
-        for some function $H_{\xi}\in C^\infty(M,\R)$. Suppose also that the map
-        \begin{equation}
-            H:\left(
-            \begin{array}{ccc}
-                    \g & \longrightarrow & C^\infty(M,\R) \\
-                    \xi & \longmapsto & H_\xi
-            \end{array}
-            \right)
-        \end{equation}
-        is a Lie algebra homomorphism, $C^\infty(M,\R)$ being understood as provided with the Poisson bracket. We then have the following definition.
-        \begin{defn}
-            A \emph{momentum map}\index{momentum map} for the action of $G$ on $(M,\omega)$ is a map
-            \begin{equation}
-                \mu:M\to\g^*
-            \end{equation}
-            such that $\d(\langle \mu,\xi\rangle)=\iota_{\rho(\xi)}\omega$ for all $\xi\in\g$. Here $\langle \mu,\xi\rangle$ is the function from $M$ to $\R$ defined by $\langle \mu,\xi\rangle(p)\equiv\langle \mu(p),\xi\rangle$.
-        \end{defn}
-        The momentum map is uniquely defined up to an additive constant of integration. A momentum map is often also required to be $G$-equivariant, where $G$ acts on $\g^*$ via the coadjoint action (dual of the adjoint action). If the group is compact or semisimple, then the constant of integration can always be chosen to make the momentum map coadjoint equivariant. However, in general the coadjoint action must be modified to make the map equivariant (this is the case for example for the Euclidean group). The modification is by a 1-cocycle on the group with values in $\g^*$.
+        where $\exp:\g\to G$ is the exponential map. Let $\iota_{\rho(\xi)}\omega$ denotes the contraction of this vector field with $\omega$.
+        \begin{prop}
+            If $G$ acts by symplectomorphisms ($\cdot$ is a symplectic action), then $\iota_{\rho(\xi)}\omega$ is closed for all $\xi\in\g$.
+        \end{prop}
+        This can be seen directly by using the formula $\mathcal{L}_X\omega=\d(\iota_X\omega)+\iota_X\d\omega$, which holds for avery differential form $\omega$ and any vector field $X$. The $1$-form $\iota_{\rho(\xi)}\omega$ is thus closed, but not necessarily exact, except for subclass of symplectic actions:
 
-    \subsection{Hamiltionian group actions}
-
-        The definition of the momentum map requires $\iota_{\rho(\xi)}\omega$ to be closed. In practice it is useful to make an even stronger assumption.
         \begin{defn}
             The $G$-action is said to be \emph{Hamiltonian}\index{Hamiltonian group action} if and only if the following conditions hold:
             \begin{itemize}
-                \item for every $\xi\in\g$ the one-form $\iota_{\rho(\xi)}\omega$ is exact, meaning that it equals $\d H_{\xi}$ for some function $H_\xi\in C^\infty(M,\R)$. If this holds, then one may choose the $H_\xi$ to make the map $H:\xi\mapsto H_\xi$ linear.
-                \item the map $H:\xi\mapsto H_\xi$ is a Lie algebra homomorphism from $\g$ to $C^\infty(M,\R)$, the algebra of smooth function on $M$ with the Poisson bracket.
+                \item for every $\xi\in\g$ the one-form $\iota_{\rho(\xi)}\omega$ is exact, meaning that
+                \begin{equation}
+                    \iota_{\rho(\xi)}\omega=\d H_{\xi}
+                \end{equation}
+                for some function $H_{\xi}\in C^\infty(M,\R)$. If this holds, then one may choose the $H_\xi$ to make the map $H:\xi\mapsto H_\xi$ linear.
+                \item the map
+                \begin{equation}
+                    H:\left(
+                    \begin{array}{ccc}
+                            \g & \longrightarrow & C^\infty(M,\R) \\
+                            \xi & \longmapsto & H_\xi
+                    \end{array}
+                    \right)
+                \end{equation}
+                is a Lie algebra homomorphism, $C^\infty(M,\R)$ being understood as the algebra of smooth function on $M$ with the Poisson bracket.
             \end{itemize}
         \end{defn}
 
-        If the action of $G$ on $(M,\omega)$ is Hamiltionian in this sense, then a momentum map is a map
+    \subsection{Momentum map}
+        
+        Let us consider an Hamoltonian action of a group $FG$ on $(M,\omega)$. The $1$-form $\iota_{\rho(\xi)}\omega$ can then we written as
         \begin{equation}
-            \mu:M\to\g^*
+            \iota_{\rho(\xi)}\omega= \d H_{\xi}
         \end{equation}
-        such that writing $H_\xi=\langle\mu,\xi\rangle$ defines a Lie algebra homomorphism $H:\xi\mapsto H_\xi$ satisfying $\rho(\xi)=X_{H_\xi}$. Here $X_{H_\xi}$ is the vector field of the Hamiltonian $H_\xi$, defined by
-        \begin{equation}
-            \iota_{X_{H_\xi}}\omega=\d H_\xi.
-        \end{equation}
+        for some function $H_{\xi}\in C^\infty(M,\R)$, and $H:\g\to C^\infty(M,\R)$ is a Lie algebra homomorphism. We then have the following definition.
+        \begin{defn}
+            A \emph{momentum map}\index{momentum map} for the action of $G$ on $(M,\omega)$ is a map $\mu:M\to\g^*$ such that
+            \begin{equation}
+                \iota_{\rho(\xi)}\omega=\d(\langle \mu,\xi\rangle)
+            \end{equation}
+            for all $\xi\in\g$. Here $\langle \mu,\xi\rangle$ is the function from $M$ to $\R$ defined by $\langle \mu,\xi\rangle(p)\equiv\langle \mu(p),\xi\rangle$.
+        \end{defn}
+        The momentum map is uniquely defined up to an additive constant of integration. A momentum map is often also required to be $G$-equivariant, where $G$ acts on $\g^*$ via the coadjoint action (dual of the adjoint action). If the group is compact or semisimple, then the constant of integration can always be chosen to make the momentum map coadjoint equivariant. However, in general the coadjoint action must be modified to make the map equivariant (this is the case for example for the Euclidean group). The modification is by a 1-cocycle on the group with values in $\g^*$.
 
         \begin{examp}
             In the case of the Hamiltonian action of the circle $G=\U(1)$, the Lie algebra dual $\g^*$ is naturally identified with $\R$, and the momentum map is simply the Hamiltonian function that generates the circle action.
         \end{examp}
 
+        \begin{examp}
+            Another classical case occurs when $M$ is the cotangent bundle of $\R^{3}$ and $G$ is the Euclidean group generated by rotations and translations. That is, $G$ is a six-dimensional group, the semidirect product of $\SO(3)$ and $\R^{3}$. The six components of the momentum map are then the three angular momenta and the three linear momenta.
+        \end{examp}
+
+        \begin{prop}
+            We have the following properties:
+            \begin{itemize}
+                \item Let $G$ be a group with Hamiltonian action on $(M_1,\omega_1)$ and $H$ be a group with Hamiltonian action on $(M_2,\omega_2)$. Then the natural action of $G\times H$ on $(M_{1}\times M_{2},\omega _{1}\times \omega _{2})$ is Hamiltonian, with momentum map the direct sum of the two momentum maps. Here $\omega _{1}\times \omega _{2}\equiv\pi _{1}^{*}\omega _{1}+\pi _{2}^{*}\omega _{2}$, where $\pi_i : M_1 \times M_2 \rightarrow M_i$ denotes the projection map.
+                \item Let $G$ be a group with Hamiltonian action on $(M,\omega)$, and $N$ a submanifold of $M$ invariant under $G$ such that the restriction of the symplectic form on $M$ to $N$ is non-degenerate. This imparts a symplectic structure to $N$ in a natural way. Then the action of $G$ on $N$ is also Hamiltonian, with momentum map the composition of the inclusion map with $M$'s momentum map.
+            \end{itemize}
+        \end{prop}
+
     \subsection{Symplectic quotient}\label{sec:symplecticquotient}
 
-        Suppose that the action of a compact Lie group $G$ on the symplectic manifold $(M,\omega)$ is Hamiltonian, as defined above, with momentum map $\mu:M\to\g^*$. From the Hamiltonian condition it follows that $\mu^{-1}(0)$ is invariant under $G$.
+        Suppose that the action of a compact Lie group $G$ on the symplectic manifold $(M,\omega)$ is Hamiltonian, as defined above, with momentum map $\mu:M\to\g^*$. From the Hamiltonian condition, it follows that the zero-level set of the momentum map
+        \begin{equation}
+            M_0\equiv\mu^{-1}(0)
+        \end{equation}
+        is invariant under $G$.
 
-        Assume now that $0$ is regular value of $\mu$ and that $G$ acts freely and properly on $\mu^{-1}(0)$. Thus $\mu^{-1}(0)$ and its quotient $\mu^{-1}(0)/G$ are both manifolds. The quotient inherits a symplectic form from $M$; that is, there is a unique symplectic form on the quotient whose pullback to $\mu^{-1}(0)$ equals the restriction of $\omega$ to $\mu^{-1}(0)$. Thus the quotient is a symplectic manifold.
+        Assume now that $0$ is regular value of $\mu$ and that $G$ acts freely and properly on $M_0$. Thus $M_0$ and its quotient $M_0/G$ are both manifolds. The quotient inherits a symplectic form from $M$. That is, there is a unique symplectic form on the quotient whose pullback to $M_0$ equals the restriction of $\omega$ to $M_0$. Thus the quotient is a symplectic manifold.
 
         \begin{defn}
-            The symplectic manifold $\mu^{-1}(0)/G$ is called \emph{symplectic quotient}\index{symplectic quotient} (also called \emph{Marsden-Weinstein quotient}\index{Marsden-Weinstein quotient} or \emph{symplectic reduction}\index{symplectic reduction}) of $M$ by $G$ and is denoted $M//G$\index{$//$}.
+            The symplectic manifold $M_0/G$ is called \emph{symplectic quotient}\index{symplectic quotient} (also called \emph{Marsden-Weinstein quotient}\index{Marsden-Weinstein quotient} or \emph{symplectic reduction}\index{symplectic reduction}) of $M$ by $G$ and is denoted $M//G$\index{$//$}.
         \end{defn}
         Its dimension equals the dimension of $M$ minus twice the dimension of $G$:
         \begin{equation}
             \dim(M//G)=\dim M-2\dim G.
         \end{equation}
 
-\section{Kähler manifolds}
+        Note that the construction carries over if one replaces the zero-level set $M_0$ by the preimage $\mu^{-1}(\xi)$ under $\mu$ of some non-zero invariant element $\xi$ of $\g^*$ (which corresponds to the residual freedom in the definition of the momentum map), or even by the premimage of the whole orbit of an element of $\g^*$ under $G$.
 
-\subsection{Kähler manifolds}
+\section{Kähler manifolds}
 
     \subsection{Kähler structure}
 
@@ -364,5 +371,9 @@
         \begin{equation}
             \dim(\mu^{-1}(\zeta)/G) = \dim M - 4\dim G.
         \end{equation}
+
+\section{$\mN=1$ field theories and Kähler geometry}
+
+\section{$\mN=2$ field theories and Hyperähler geometry}
 
 \end{document}
