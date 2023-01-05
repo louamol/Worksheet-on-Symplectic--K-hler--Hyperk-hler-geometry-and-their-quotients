@@ -3,7 +3,7 @@
 \usepackage{import}
 \import{}{custom_macros.tex}
 
-\title{Geometry and quotients}
+\title{Geometry and Quotients}
 
 % DOCUMENT -----------------------------
 
@@ -18,7 +18,8 @@
 \section{Symplectic manifolds}
 
     \subsection{Symplectic structure}
-    
+
+        Let $M$ be a smooth manifold.    
         \begin{defn}
             A $2$-form $\omega$ on $M$ is said to be \emph{non-degenerate}\index{non-degenerate form} if is satisfies the following property: if there exists $X_p\in T_pM$ such that $\omega(X_p,Y_p)=0$ for all $Y_p\in T_pM$ then $X_p=0$.
         \end{defn}
@@ -57,15 +58,21 @@
         \begin{equation}
             \langle\cdot,\cdot\rangle : \g^*\times\g\to\R
         \end{equation}
-        be the canonical pairing between $\g$ and $\g^*$. Any $\xi\in\g$ induces a vector field $\rho(\xi)\in\mathfrak{X}(M)$ on $M$ describing the infinitesimal action of $\xi$. More precisely, at a point $p\in M$ the tangent vector $\rho(\xi)_p$ is defined as
+        be the canonical pairing between $\g$ and $\g^*$. 
+        
+        The first thing to notice is that any $\xi\in\g$ induces a vector field $\rho(\xi)\in\mathfrak{X}(M)$ on $M$ describing the infinitesimal action of $\xi$ on $M$. More precisely, at a point $p\in M$ the tangent vector $\rho(\xi)_p$ is defined as
         \begin{equation}
             \rho(\xi)_p\equiv\eval{\dv{}{t}}_{t=0}(\exp(t\xi)\cdot p),
         \end{equation}
         where $\exp:\g\to G$ is the exponential map. Let $\iota_{\rho(\xi)}\omega$ denotes the contraction of this vector field with $\omega$.
         \begin{prop}
-            If $G$ acts by symplectomorphisms ($\cdot$ is a symplectic action), then $\iota_{\rho(\xi)}\omega$ is closed for all $\xi\in\g$.
+            If the action $\cdot$ is symplectic action, then $\iota_{\rho(\xi)}\omega$ is closed for all $\xi\in\g$.
         \end{prop}
-        This can be seen directly by using the formula $\mathcal{L}_X\omega=\d(\iota_X\omega)+\iota_X\d\omega$, which holds for avery differential form $\omega$ and any vector field $X$. The $1$-form $\iota_{\rho(\xi)}\omega$ is thus closed, but not necessarily exact, except for subclass of symplectic actions:
+        \begin{proof}
+            This can be seen directly by using the \emph{Cartan formula} $\mathcal{L}_X\omega=\d(\iota_X\omega)+\iota_X\d\omega$, which holds for every differential form $\omega$ and any vector field $X$.
+        \end{proof}
+
+        The $1$-form $\iota_{\rho(\xi)}\omega$ is therefore always closed, but not necessarily exact. It is exact only for a subclass of symplectic actions, which we know turn to.
 
         \begin{defn}
             The $G$-action is said to be \emph{Hamiltonian}\index{Hamiltonian group action} if and only if the following conditions hold:
@@ -74,7 +81,7 @@
                 \begin{equation}
                     \iota_{\rho(\xi)}\omega=\d H_{\xi}
                 \end{equation}
-                for some function $H_{\xi}\in C^\infty(M,\R)$. If this holds, then one may choose the $H_\xi$ to make the map $H:\xi\mapsto H_\xi$ linear.
+                for some function $H_{\xi}\in C^\infty(M,\R)$. If this holds, then one may choose the $H_\xi$ to make the map $H:\xi\mapsto H_\xi$ linear. Note that this just means that $\rho(\xi)$ is a Hamiltonian vector field with Hamiltonian $H_\xi$.
                 \item the map
                 \begin{equation}
                     H:\left(
@@ -84,13 +91,13 @@
                     \end{array}
                     \right)
                 \end{equation}
-                is a Lie algebra homomorphism, $C^\infty(M,\R)$ being understood as the algebra of smooth function on $M$ with the Poisson bracket.
+                is a Lie algebra homomorphism, $C^\infty(M,\R)$ being understood as the algebra of smooth functions on $M$ with the Poisson bracket.
             \end{itemize}
         \end{defn}
 
     \subsection{Momentum map}
         
-        Let us consider an Hamoltonian action of a group $FG$ on $(M,\omega)$. The $1$-form $\iota_{\rho(\xi)}\omega$ can then we written as
+        Let us consider a Hamiltonian action of a Lie group $G$ on $(M,\omega)$. The $1$-form $\iota_{\rho(\xi)}\omega$ can then we written as
         \begin{equation}
             \iota_{\rho(\xi)}\omega= \d H_{\xi}
         \end{equation}
@@ -100,7 +107,7 @@
             \begin{equation}
                 \iota_{\rho(\xi)}\omega=\d(\langle \mu,\xi\rangle)
             \end{equation}
-            for all $\xi\in\g$. Here $\langle \mu,\xi\rangle$ is the function from $M$ to $\R$ defined by $\langle \mu,\xi\rangle(p)\equiv\langle \mu(p),\xi\rangle$.
+            for all $\xi\in\g$. Here $\langle \mu,\xi\rangle$ is the function from $M$ to $\R$ defined by $\langle \mu,\xi\rangle(p)\equiv\langle \mu(p),\xi\rangle$, which is thing else than the Hamiltonian $H_\xi$.
         \end{defn}
         The momentum map is uniquely defined up to an additive constant of integration. A momentum map is often also required to be $G$-equivariant, where $G$ acts on $\g^*$ via the coadjoint action (dual of the adjoint action). If the group is compact or semisimple, then the constant of integration can always be chosen to make the momentum map coadjoint equivariant. However, in general the coadjoint action must be modified to make the map equivariant (this is the case for example for the Euclidean group). The modification is by a 1-cocycle on the group with values in $\g^*$.
 
@@ -128,7 +135,7 @@
         \end{equation}
         is invariant under $G$.
 
-        Assume now that $0$ is regular value of $\mu$ and that $G$ acts freely and properly on $M_0$. Thus $M_0$ and its quotient $M_0/G$ are both manifolds. The quotient inherits a symplectic form from $M$. That is, there is a unique symplectic form on the quotient whose pullback to $M_0$ equals the restriction of $\omega$ to $M_0$. Thus the quotient is a symplectic manifold.
+        Assume now that $0$ is regular value of $\mu$ and that $G$ acts freely and properly\footnote{Note that any continuous action of a Lie group on a smooth manifold is proper.} on $M_0$. Thus $M_0$ and its quotient $M_0/G$ are both manifolds. The quotient inherits a symplectic form from $M$. That is, there is a unique symplectic form on the quotient whose pullback to $M_0$ equals the restriction of $\omega$ to $M_0$. Thus the quotient is a symplectic manifold.
 
         \begin{defn}
             The symplectic manifold $M_0/G$ is called \emph{symplectic quotient}\index{symplectic quotient} (also called \emph{Marsden-Weinstein quotient}\index{Marsden-Weinstein quotient} or \emph{symplectic reduction}\index{symplectic reduction}) of $M$ by $G$ and is denoted $M//G$\index{$//$}.
@@ -139,6 +146,47 @@
         \end{equation}
 
         Note that the construction carries over if one replaces the zero-level set $M_0$ by the preimage $\mu^{-1}(\xi)$ under $\mu$ of some non-zero invariant element $\xi$ of $\g^*$ (which corresponds to the residual freedom in the definition of the momentum map), or even by the premimage of the whole orbit of an element of $\g^*$ under $G$.
+
+        \begin{examp}
+            Let us consider the group $G=\R$ acting on $(\R^4,\d x^1\wedge\d x^2+\d x^3\wedge\d x^4)$ as
+            \begin{equation}
+                (x^1,x^2,x^3,x^4) \mapsto (x^1,x^2,x^3,x^4+t).
+            \end{equation}
+            where $t$ denotes the coordinate on $G$. I.e., $G$ is the group of translations in the $x^4$-coordinate, which are clearly symplectomorphisms. The most general element of $\mathfrak{g}$ is $\lambda \p_t$ with $\lambda\in\R$. On can see that
+            \begin{equation}
+                \rho(\lambda\p_t)=\p_{x^4}.
+            \end{equation}
+            It follows that
+            \begin{equation}
+                \iota_{\rho(\lambda\p_t)}=-\lambda\d x^2.
+            \end{equation}
+            We know want to find a momentum map $\mu:\R^4\to\mathfrak{g}^*$ such that
+            \begin{align}
+                \d\langle\mu,\lambda\p_t\rangle &= -\lambda\d x^2\\
+                \Leftrightarrow\qquad \langle\mu,\lambda\p_t\rangle &= -\lambda x^2 + C
+            \end{align}
+            where $C\in\R$ is an arbitrary constant, this gives
+            \begin{equation}
+                \mu = (C-x^2)\d t.
+            \end{equation}
+            The zero-level set of $\mu$ is therefore $M_0=\{(x^1,x^2,x^3,x^4)\in M|x^2=C\}$, which can be identified with $\R^3$. $0$ is clearly a regular value of $\mu$ since $\mu_*=-\d x^2$ which does not vanish on $M_0$, or anywhere as a matter of fact. It is also clear that $G$ acts freely on $M_0$, so we can quotient $M_0$ by $G$, i.e. project $M_0$ through the $x^4$ direction. The resulting space is diffeomorphic to $\R^2$ and we have the projection
+            \begin{equation}
+                \pi:\left(
+                \begin{array}{ccc}
+                        M_0\cong\R^3 & \longrightarrow & M_0/G\cong\R^2 \\
+                        (x^1,x^2,C,x^4) & \longmapsto & (x^1,x^2)
+                \end{array}
+                \right).
+            \end{equation}
+            The only symplectic structure on $M_0/G$ whose pullback through $\pi$ is $\omega|_{M_0}$\footnote{Note that this $2$-form is never a sympletic form because it is always degenerate.} is $\omega_G=\d x^1\wedge\d x^2$. Finally, we found that
+            \begin{equation}
+                (\R^4,\d x^1\wedge\d x^2+\d x^3\wedge\d x^4)//\R=(\R^2,\d x^1\wedge\d x^2).
+            \end{equation}
+        \end{examp}
+
+\section{Riemannian quotients}
+
+    Let us just acknowledge a few difference between the Riemannian quotient and the symplectic quotient we described above.
 
 \section{Kähler manifolds}
 
@@ -372,8 +420,8 @@
             \dim(\mu^{-1}(\zeta)/G) = \dim M - 4\dim G.
         \end{equation}
 
-\section{$\mN=1$ field theories and Kähler geometry}
+\section{Kähler geometry and $\mN=1$ field theories}
 
-\section{$\mN=2$ field theories and Hyperähler geometry}
+\section{Hyperkähler geometry and $\mN=2$ field theories}
 
 \end{document}

@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber main"] 1671631688 "main.bcf" "main.bbl" "main" 1671633327
-  "main.bcf" 1671633327 106035 6865adfb938be9d910c27018188bcad0 "pdflatex"
+["biber main"] 1671631688 "main.bcf" "main.bbl" "main" 1672940102
+  "main.bcf" 1672940102 106035 6865adfb938be9d910c27018188bcad0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1671633326 "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, Kähler, Hyperkähler geometry and their quotients/main.tex" "main.pdf" "main" 1671633327
+["pdflatex"] 1672940101 "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, Kähler, Hyperkähler geometry and their quotients/main.tex" "main.pdf" "main" 1672940102
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1607267403 25420 f2c23a7c3a7fea5cb4ae4a632310af13 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1607273539 31952 3c609752e07479b75f1400c325a21382 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1607267403 40136 52321c4f09ab9f3c383093364073b7e8 ""
@@ -89,10 +89,13 @@
   "/home/louan/.miktex/texmfs/install/fonts/tfm/public/latex-fonts/lasyb10.tfm" 1605294561 520 4bf1455197d190cb95c579bde4c2f0ba ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1623060326 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1623060326 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1623060326 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1623060326 36281 c355509802a035cadc5f15869451dcee ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1623060326 35752 024fb6c41858982481f6968b5fc26508 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1623060326 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1623060326 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1623060326 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1623060326 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1623060326 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1623060326 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1623060326 32716 08e384dc442464e7285e891af9f45947 ""
@@ -370,14 +373,14 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1658673922 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1658673923 2245 c8a4088d07cffc2e5207730c738edd76 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1658673923 20785 71a3d72ab517959a6979c27e6176bec1 ""
-  "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, Kähler, Hyperkähler geometry and their quotients/main.tex" 1671633323 28658 808806bc793dee2c9cdb93c9d2ae1604 ""
+  "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, Kähler, Hyperkähler geometry and their quotients/main.tex" 1672940100 31627 44eb2fd9ce88c78d6556380ccec2ba8b ""
   "custom_macros.tex" 1653414228 5391 295b234a720913f7cfac2bace9d369d5 ""
-  "main.aux" 1671633327 7000 f3d9b478b9bbc1ceac5af6e9080a9de7 "pdflatex"
+  "main.aux" 1672940102 7260 6ac1a5a62506e62811b23912ef09562c "pdflatex"
   "main.bbl" 1671631689 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1671633327 2132 ffcbe3653bfad3eac6f6e2fd12b0c1ac "pdflatex"
-  "main.run.xml" 1671633327 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
-  "main.tex" 1671633323 28658 808806bc793dee2c9cdb93c9d2ae1604 ""
-  "main.toc" 1671633327 1194 0258ec43cb8b0ca6fcb57d267c336773 "pdflatex"
+  "main.out" 1672940102 2284 51c2910b12d329b0e778c11fccb9aa8c "pdflatex"
+  "main.run.xml" 1672940102 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.tex" 1672940100 31627 44eb2fd9ce88c78d6556380ccec2ba8b ""
+  "main.toc" 1672940102 1271 e1220e6111845da5b32c36ebf3a5fd72 "pdflatex"
   "worksheetclass.cls" 1656357142 6186 63353e57c260def210be553cd5879d93 ""
   (generated)
   "main.aux"
