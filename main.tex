@@ -206,36 +206,30 @@
         \end{defn}
         
         \begin{defn}
-            An \emph{almost complex structure} $J$ on a smooth manifold $M$ is a linear complex structure $J_p$ on each tangent space $T_pM$ which varies smoothly. In other words, it is a map $J:TM\to TM$ such that $J^2=-\id_{TM}$. $(M,J)$ is then called an \emph{almost complex manifold}.
+            An \emph{almost complex structure} $J$ on a smooth manifold $M$ is the data a linear complex structure $J_p$ on each tangent space $T_pM$ which varies smoothly. In other words, it is a map $J:TM\to TM$, i.e. a $(1,1)$-tensor, such that $J^2=-\id_{TM}$. $(M,J)$ is then called an \emph{almost complex manifold}.
         \end{defn}
         
-        It is important to notice that imposing the existence of a complex structure strongly constrains the manifold. If $M$ admits an almost complex structure, it must be even-dimensional and orientable.
+        It is important to notice that imposing the existence of an almost complex structure strongly constrains the manifold. If $M$ admits the latter, it must be even-dimensional and orientable.
 
-        One can show that any even-dimensional vector space admits a linear complex structure. Therefore, an even dimensional manifold always admits a $(1,1)$-rank tensor pointwise (which is just a linear transformation on each tangent space) such that $J^2_p=-1$ at each point $p$. Only when this local tensor can be patched together to be defined globally does the pointwise linear complex structure yield an almost complex structure, which is then uniquely determined.
+        One can show that any even-dimensional vector space admits a linear complex structure. Therefore, an even-dimensional manifold always admits a map $J:TM\to TM$ tensor pointwise such that $J^2=-\id_{TM}$. Only when this local tensor can be patched together to be defined globally does the pointwise linear complex structure yield an almost complex structure, which is then uniquely determined.
 
         \begin{examp}
-            If $M=\R^2$, then $\left\{\pdv{}{x},\pdv{}{y}\right\}$ forms a basis of $TM$. Let us define an almost complex structure $J$ and $\R^2$ by
+            If $M=\R^2$, then $\left\{\p_x,\p_y\right\}$ forms a basis of $TM$. Let us define an almost complex structure $J$ on $\R^2$ by
             \begin{equation}
-                J\left( \pdv{}{x} \right)=\pdv{}{y},\qquad J\left( \pdv{}{y} \right)=-\pdv{}{x},
+                J\left( \p_x \right)=\p_{y},\qquad J\left( \p_{y} \right)=-\p_{x},
             \end{equation}
-            therefore $J$ here rotates $\R^2$ anticlockwise through $\pi/2$ around the origin. Its eigenvectors are
-            \begin{equation}
-                \pdv{}{z}\equiv\frac{1}{2}\left(\pdv{}{x}-i\pdv{}{y}\right),\qquad \pdv{}{\bz}\equiv\frac{1}{2}\left(\pdv{}{x}+i\pdv{}{y}\right) 
-            \end{equation}
-            with eigenvalues $\pm i$ respectively. Notice the the eigenvectors are complex linear combinations of our basis. 
+            therefore $J$ here rotates $\R^2$ anticlockwise through $\pi/2$ around the origin.
         \end{examp}
 
-        The reason these structures are said to be ``almost'' complex and not ``fully'' complex is the following: they are not necessarily related to complex manifolds\footnote{A complex manifold is a manifold with an atlas of charts to the open unit disc in $\mathbb{C}^n$ such that the transition maps are holomorphic.}.
-        
-        Let us be ore precise. It is clear that every complex manifold is in particular an almost complex manifold. Indeed, given some holomorphic coordinates $z^\mu=x^\mu+iy^\mu$, we can always define an almost complex structure $J$ by
+        The reason these structures are said to be ``almost'' complex and not ``fully'' complex is the following: they are not necessarily related to complex manifolds\footnote{A complex manifold is a manifold with an atlas of charts to the open unit disc in $\mathbb{C}^n$ such that the transition maps are holomorphic.}. Let us be more precise. It is clear that every complex manifold is in particular an almost complex manifold. Indeed, given some holomorphic coordinates $z^\mu=x^\mu+iy^\mu$, we can always define an almost complex structure $J$ by
         \begin{equation}
-            J\left(\pdv{}{x^\mu}\right)=\pdv{}{y^\mu},\qquad J\left(\pdv{}{y^\mu}\right)=-\pdv{}{x^\mu}\label{eq:Jcanform1}
+            J\left(\p_{x^\mu}\right)=\p_{y^\mu},\qquad J\left(\p_{y^\mu}\right)=-\p_{x^\mu}\label{eq:Jcanform1}
         \end{equation}
         or, equivalently,
         \begin{equation}
-            J\left(\pdv{}{z^\mu}\right)=i\pdv{}{z^\mu},\qquad J\left(\pdv{}{\bar{z}^\mu}\right)=-i\pdv{}{\bar{z}^\mu}\label{eq:Jcanform2}.
+            J\left(\p_{z^\mu}\right)=i\p_{z^\mu},\qquad J\left(\p_{\bar{z}^\mu}\right)=-i\p_{\bar{z}^\mu}\label{eq:Jcanform2}.
         \end{equation}
-        The canonical almost complex structure $J$ defined by \eqref{eq:Jcanform1} for a complex manifold is said to be \emph{induced} by the complex structure.
+        The canonical almost complex structure $J$ defined by \eqref{eq:Jcanform1} for a complex manifold is then said to be \emph{induced} by the complex structure.
         \begin{defn}
             Coordinates such that the almost complex structure of a manifold takes the canonical form (\ref{eq:Jcanform1}) in an entire neighborhood of a point $p\in M$ are called \emph{local holomorphic coordinates} for $J$ at $p$.
         \end{defn}
@@ -249,52 +243,34 @@
             If an almost complex manifold $(M,J)$ is integrable, then the patches of local holomorphic coordinates can be patch together to form an atlas for $M$, therefore giving it a complex structure. Moreover, this complex structure induces $J$.
         \end{prop}
 
+        In conclusion:
         \begin{result}
-            In conclusion, integrable almost complex structures and complex structures are equivalent.
+            Integrable almost complex structures and complex structures are equivalent in the sense that one induces the other and vice-versa.
         \end{result}
 
-        Finally, let us quickly discuss some consequences of having an complex structure. Given a complex manifold $M$ of complex dimension $n$, its tangent bundle as a smooth vector bundle is a real rank $2n$ vector bundle $TM$ on $M$. More precisely, it is the complexification $\displaystyle TM\otimes \mathbb{C} \to M$ of the real tangent bundle $\displaystyle TM \to M$. The fibres of $TM\otimes \mathbb{C}$ are the vector spaces $T_pM\otimes\C$. Recall that
+        Finally, let us quickly discuss some consequences of having an complex structure. Given a complex manifold $M$ of complex dimension $n$, its tangent bundle as a smooth vector bundle is a real rank $2n$ vector bundle $TM$ on $M$. More precisely, it is the complexification $\displaystyle TM\otimes \mathbb{C} \to M$ of the real tangent bundle $\displaystyle TM \to M$. The fibres of $TM\otimes \mathbb{C}$ are the vector spaces $T_pM\otimes\C\to M$. Recall that
         \begin{equation*}
             T_pM\otimes \C\text{ on }\R ~\cong~ T_pM\text{ on }\C.
         \end{equation*}
         To summarize, the complexified tangent bundle in the vector bundle whose fibres are the complexified vector spaces. We use the notation $iX_p\equiv X_p\otimes i$ for any $X_p\in T_pM$\footnote{Note that it is really important to have a tensor product (instead of a Cartesian product for example), in order to have properties like $fX+igX = (f+ig)X$.}. 
         
-        We have seen that having a complex structure is equivalent to having a integrable almost complex structure $J$. At each point $p\in M$, $J$ can be used to split the tangent space into its  \emph{holomoprhic} and \emph{antiholomoprhic} parts:
-        \begin{align*}
-                T^{1,0}_pM &= \left\{X_p\in T_pM|X_p=\frac{1}{2}(1-iJ)X_p\right\},\\
-                T^{0,1}_pM &= \left\{X_p\in T_pM|X_p=\frac{1}{2}(1+iJ)X_p\right\}.
-        \end{align*}
-        This splitting of the tangent spaces induces a splitting of the whole tangent bundle, which is exactly the one we discussed above.
-        
-        The endomorphism $J$ that was initially defined on the tangent bundle may be extended complex-linearly to an endomorphism $J:TM\otimes \mathbb{C} \to TM\otimes \mathbb{C}$ on the complexified tangent bundle by defining $J(X+iY)=J(X)+iJ(Y)$ for vectors $X,Y$ in $TM$. Since $J^2=-\id$, $J$ has eigenvalues $i,-i$ on the complexified tangent bundle, and $TM\otimes \mathbb{C}$ therefore splits as a direct sum 
+        We have seen that having a complex structure is equivalent to having a integrable almost complex structure $J$. The endomorphisms $J_p$ are initially defined on the tangent spaces but they can be extended complex-linearly to endomorphisms on the complexified tangent spaces by defining $J(X_p+iY_p)=J(X_p)+iJ(Y_p)$ for $X_p,Y_p\in T_pM$. At each point $p\in M$, $J$ can then be used to split the tangent space into its \emph{holomoprhic} and \emph{antiholomoprhic} parts:
+        \begin{align}
+                T^{1,0}_pM &= \left\{X_p\in T_pM|J(X_p)=iX_p\right\},\label{eq:tangentspacesplit1}\\
+                T^{0,1}_pM &= \left\{X_p\in T_pM|J(X_p)=-iX_p\right\}.\label{eq:tangentspacesplit2}
+        \end{align}
+        Tangent vectors are dubbed holomorphic or antiholomorphic accordingly. Any tangent vector $X_p$ can be decomposed in the sum of a holomorphic and an antiholomorhic part as
+        \begin{equation}
+            X_p = \underbrace{\frac{1}{2}(1-iJ)X_p}_{\text{holom.}}+\underbrace{\frac{1}{2}(1+iJ)X_p}_{\text{antiholom.}}.
+        \end{equation}
+
+        This splitting of the tangent spaces induces a splitting of the whole complexified tangent bundle:
         \begin{equation}
             TM\otimes \mathbb{C} =T^{1,0}M\oplus T^{0,1}M.
         \end{equation}
+        The fibers of $T^{1,0}M$ and $T^{0,1}M$ being precisely \eqref{eq:tangentspacesplit1} and \eqref{eq:tangentspacesplit2}.
 
-        
-
-
-        In a local holomorphic chart 
-        \begin{equation}
-            \phi=(z^1,\dots,z^n):U\to\C^n
-        \end{equation}
-        of $M$, one has distinguished real coordinates $(x^{1},\dots ,x^{n},y^{1},\dots ,y^{n})$ defined by $z^j=x^j+iy^j$ for each $j=1,\dots,n$. These give distinguished complex-valued one-forms $\d z^j=\d x^j+i\d y^j,\d\bar{z}^j=\d x^j-i\d y^j$ on $U$. Dual to these complex-valued one-forms are the complex-valued vector fields (that is, sections of the complexified tangent bundle),
-        \begin{equation}
-            \pdv{}{z^j}=\frac{1}{2}\left( \pdv{}{x^j}-i\pdv{}{y^j} \right),\qquad \pdv{}{\bz^j}=\frac{1}{2}\left( \pdv{}{x^j}+i\pdv{}{y^j} \right).
-        \end{equation}
-        Taken together, these vector fields form a frame for $TM\otimes \mathbb{C}|_U$, the restriction of the complexified tangent bundle to $U$. As such, these vector fields also split the complexified tangent bundle into two subbundles
-        \begin{equation}
-            T^{1,0}M|_U\equiv\text{span}\left\{\pdv{}{z^j}\right\},\qquad  T^{0,1}M|_U\equiv\text{span}\left\{\pdv{}{\bz^j}\right\}.
-        \end{equation}
-        
-        Under a holomorphic change of coordinates, these two subbundles of $TM\otimes \mathbb{C}|_U$ are preserved, and so by covering $M$ by holomorphic charts one obtains a splitting of the complexified tangent bundle. This is precisely the splitting into the holomorphic and anti-holomorphic tangent bundles previously described. From this perspective, the name holomorphic tangent bundle becomes transparent because the transition functions for the holomorphic tangent bundle are also holomorphic. Thus the holomorphic tangent bundle is a genuine holomorphic vector bundle.
-
-        To summarize, if our almost complex structure is integrable, then
-        \begin{equation}
-            TM\otimes\C = T^{1,0}M\oplus T^{0,1}M
-        \end{equation}
-        
-        Finally, the splitting of the tangent bundle induces a splitting of the cotangent bundle and therefore also of all the tensor spaces, which are constructed from $TM$ and $T^*M$. In particular, the space of complex $k$-forms $\Omega^k(M,\C)={\textstyle\bigwedge^k V}\otimes\C$ can be decomposed as
+        Moreover, the splitting of the tangent bundle induces a splitting of the cotangent bundle and therefore also of all the tensor spaces, which are constructed from $TM$ and $T^*M$. In particular, the space of complex $k$-forms $\Omega^k(M,\C)={\textstyle\bigwedge^k V}\otimes\C$ can be decomposed as
         \begin{equation*}
             \Omega^k(M,\C) = \bigoplus_{p+q=k}\Omega^{(p,q)}(M)
         \end{equation*}
@@ -302,11 +278,25 @@
         \begin{equation*}
             \Omega^{(p,q)}(M) = \bigwedge^pT^{*1,0}M\bigwedge^qT^{*0,1}M
         \end{equation*}
-        in the space of $(p,q)$-forms on $M$. This is the \emph{Hodge decomposition}\index{Hodge decomposition}. In terms of components, this means that any $\omega\in\Omega^{(p,q)}(M)$ can be written as
+        in the space of $(p,q)$-forms on $M$. This is the \emph{Hodge decomposition}\index{Hodge decomposition}. The usual de Rham cohomology also undergoes this splitting, giving rise to the Dolbeault cohomology.
+
+        In a local holomorphic chart $\phi=(z^1,\dots,z^n):U\subset M\to\C^n$, one has distinguished real coordinates $(x^{1},\dots ,x^{n},y^{1},\dots ,y^{n})$ defined by $z^j=x^j+iy^j$ for each $j=1,\dots,n$. These give complex-valued vector fields (that is, sections of the complexified tangent bundle),
+        \begin{equation}
+            \pdv{}{z^j}=\frac{1}{2}\left( \pdv{}{x^j}-i\pdv{}{y^j} \right),\qquad \pdv{}{\bz^j}=\frac{1}{2}\left( \pdv{}{x^j}+i\pdv{}{y^j} \right).
+        \end{equation}
+        Taken together, these vector fields form a frame for $TM\otimes \mathbb{C}|_U$, the restriction of the complexified tangent bundle to $U$. As such, these vector fields also split the complexified tangent bundle into two subbundles
+        \begin{equation}
+            T^{1,0}M|_U\equiv\text{span}\left\{\pdv{}{z^j}\right\},\qquad  T^{0,1}M|_U\equiv\text{span}\left\{\pdv{}{\bz^j}\right\}.
+        \end{equation}
+        Under a holomorphic change of coordinates, these two subbundles of $TM\otimes \mathbb{C}|_U$ are preserved, and so by covering $M$ by holomorphic charts one obtains a splitting of the complexified tangent bundle. This is precisely the splitting into the holomorphic and anti-holomorphic tangent bundles previously described. From this perspective, the name holomorphic tangent bundle becomes transparent because the transition functions for the holomorphic tangent bundle are also holomorphic. Thus the holomorphic tangent bundle is a genuine holomorphic vector bundle.
+
+        Dual to those vector fields, are complex-valued one-forms $\d z^j=\d x^j+i\d y^j,\d\bar{z}^j=\d x^j-i\d y^j$ on $U$. In terms of components, the Hodge decomposition tells us that any $\omega\in\Omega^{(p,q)}(M)$ can be written as
         \begin{equation}
             \omega = \omega_{a_1\dots a_p\bar{b}_1\dots\bar{b}_q}(z,\bz)~\d z^{a_1}\wedge\dots\wedge \d z^{a_p}\wedge \d\bz^{\bar{b}_1}\wedge\dots\wedge \d\bz^{\bar{b}_q}
         \end{equation}
-        where the functions $\omega_{a_1\dots a_p\bar{b}_1\dots\bar{b}_q}(z,\bz)$ have $p$ holomorphic and $q$ antiholomorphic indices. The usual de Rham cohomology also undergoes this splitting, giving rise to the Dolbeault cohomology.
+        where the functions $\omega_{a_1\dots a_p\bar{b}_1\dots\bar{b}_q}(z,\bz)$ have $p$ holomorphic and $q$ antiholomorphic indices. 
+        
+        
 
     \subsection{Kähler structure}
 

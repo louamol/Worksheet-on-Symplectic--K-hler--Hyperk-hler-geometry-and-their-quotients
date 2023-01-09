@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber main"] 1672999410 "main.bcf" "main.bbl" "main" 1673002485
-  "main.bcf" 1673002485 106035 6865adfb938be9d910c27018188bcad0 "pdflatex"
+["biber main"] 1673270676 "main.bcf" "main.bbl" "main" 1673272305
+  "main.bcf" 1673272305 106035 6865adfb938be9d910c27018188bcad0 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1673002483 "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, Kähler, Hyperkähler geometry and their quotients/main.tex" "main.pdf" "main" 1673002485
+["pdflatex"] 1673272303 "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, Kähler, Hyperkähler geometry and their quotients/main.tex" "main.pdf" "main" 1673272305
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1607267403 25420 f2c23a7c3a7fea5cb4ae4a632310af13 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1607273539 31952 3c609752e07479b75f1400c325a21382 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1607267403 40136 52321c4f09ab9f3c383093364073b7e8 ""
@@ -375,14 +375,14 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1658673922 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty" 1658673923 2245 c8a4088d07cffc2e5207730c738edd76 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/zref/zref-base.sty" 1658673923 20785 71a3d72ab517959a6979c27e6176bec1 ""
-  "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, Kähler, Hyperkähler geometry and their quotients/main.tex" 1673002482 43453 dc97ed7d9838f0b63424d54a02a913d8 ""
+  "/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, Kähler, Hyperkähler geometry and their quotients/main.tex" 1673272300 43106 7133aee5c9ea0861bc1e2a1dbfac2ccc ""
   "custom_macros.tex" 1653414228 5391 295b234a720913f7cfac2bace9d369d5 ""
-  "main.aux" 1673002485 8685 2d590daff73097781b71ec8d758fe850 "pdflatex"
-  "main.bbl" 1672999416 466 ee04f40f768daeed26442158e95aba61 "biber main"
-  "main.out" 1673002485 2601 2affbd02fe6328dfc1a13bad1c5a8bab "pdflatex"
-  "main.run.xml" 1673002485 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
-  "main.tex" 1673002482 43453 dc97ed7d9838f0b63424d54a02a913d8 ""
-  "main.toc" 1673002485 1445 65ba04c80c15d84058fd2c4b23356619 "pdflatex"
+  "main.aux" 1673272305 8840 61a9dcc8f1ca483e515ceb370cafa2c2 "pdflatex"
+  "main.bbl" 1673270678 466 ee04f40f768daeed26442158e95aba61 "biber main"
+  "main.out" 1673272305 2601 2affbd02fe6328dfc1a13bad1c5a8bab "pdflatex"
+  "main.run.xml" 1673272305 2307 fa280d158a7733084a6a66e2106e4193 "pdflatex"
+  "main.tex" 1673272300 43106 7133aee5c9ea0861bc1e2a1dbfac2ccc ""
+  "main.toc" 1673272305 1445 f3a4a7a77b692e19452f714833f26a07 "pdflatex"
   "worksheetclass.cls" 1656357142 6186 63353e57c260def210be553cd5879d93 ""
   (generated)
   "main.aux"
