@@ -7,11 +7,11 @@
 \contentsline {section}{\numberline {2}Riemannian quotients}{5}{section.2}%
 \contentsline {section}{\numberline {3}K^^c3^^a4hler manifolds}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Complex structure}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}K^^c3^^a4hler structure}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.2}K^^c3^^a4hler structure}{8}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}K^^c3^^a4hler quotients}{9}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Hyperk^^c3^^a4hler manifolds}{9}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Quaternionic structure}{9}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Hyperh^^c3^^a4hler structure}{9}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Hyperk^^c3^^a4hler quotients}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Hyperk^^c3^^a4hler quotients}{12}{subsection.4.3}%
 \contentsline {section}{\numberline {5}K^^c3^^a4hler geometry and $\mathcal {N}=1$ field theories}{12}{section.5}%
 \contentsline {section}{\numberline {6}Hyperk^^c3^^a4hler geometry and $\mathcal {N}=2$ field theories}{12}{section.6}%

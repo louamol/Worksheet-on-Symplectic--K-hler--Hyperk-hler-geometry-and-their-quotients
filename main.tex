@@ -278,66 +278,7 @@
         \begin{equation*}
             \Omega^{(p,q)}(M) = \bigwedge^pT^{*1,0}M\bigwedge^qT^{*0,1}M
         \end{equation*}
-        in the space of $(p,q)$-forms on $M$. This is the \emph{Hodge decomposition}\index{Hodge decomposition}. The usual de Rham cohomology also undergoes this splitting, giving rise to the Dolbeault cohomology.
-
-        In a local holomorphic chart $\phi=(z^1,\dots,z^n):U\subset M\to\C^n$, one has distinguished real coordinates $(x^{1},\dots ,x^{n},y^{1},\dots ,y^{n})$ defined by $z^j=x^j+iy^j$ for each $j=1,\dots,n$. These give complex-valued vector fields (that is, sections of the complexified tangent bundle),
-        \begin{equation}
-            \pdv{}{z^j}=\frac{1}{2}\left( \pdv{}{x^j}-i\pdv{}{y^j} \right),\qquad \pdv{}{\bz^j}=\frac{1}{2}\left( \pdv{}{x^j}+i\pdv{}{y^j} \right).
-        \end{equation}
-        Taken together, these vector fields form a frame for $TM\otimes \mathbb{C}|_U$, the restriction of the complexified tangent bundle to $U$. As such, these vector fields also split the complexified tangent bundle into two subbundles
-        \begin{equation}
-            T^{1,0}M|_U\equiv\text{span}\left\{\pdv{}{z^j}\right\},\qquad  T^{0,1}M|_U\equiv\text{span}\left\{\pdv{}{\bz^j}\right\}.
-        \end{equation}
-        Under a holomorphic change of coordinates, these two subbundles of $TM\otimes \mathbb{C}|_U$ are preserved, and so by covering $M$ by holomorphic charts one obtains a splitting of the complexified tangent bundle. This is precisely the splitting into the holomorphic and anti-holomorphic tangent bundles previously described. From this perspective, the name holomorphic tangent bundle becomes transparent because the transition functions for the holomorphic tangent bundle are also holomorphic. Thus the holomorphic tangent bundle is a genuine holomorphic vector bundle.
-
-        Dual to those vector fields, are complex-valued one-forms $\d z^j=\d x^j+i\d y^j,\d\bar{z}^j=\d x^j-i\d y^j$ on $U$. In terms of components, the Hodge decomposition tells us that any $\omega\in\Omega^{(p,q)}(M)$ can be written as
-        \begin{equation}
-            \omega = \omega_{a_1\dots a_p\bar{b}_1\dots\bar{b}_q}(z,\bz)~\d z^{a_1}\wedge\dots\wedge \d z^{a_p}\wedge \d\bz^{\bar{b}_1}\wedge\dots\wedge \d\bz^{\bar{b}_q}
-        \end{equation}
-        where the functions $\omega_{a_1\dots a_p\bar{b}_1\dots\bar{b}_q}(z,\bz)$ have $p$ holomorphic and $q$ antiholomorphic indices. 
-        
-        
-
-    \subsection{Kähler structure}
-
-        \begin{defn}
-            An almost complex structure $J$ is said to be \emph{compatible}\index{almost complex structure!compatible} with the symplectic $\omega$ if 
-            \begin{equation*}
-                \omega(JX,JY) = \omega(X,Y)
-            \end{equation*}
-            for all $X,Y\in TM$.
-        \end{defn}
-        Compatible almost complex structure are very important because it means that the bilinear form $g$ on the tangent space of $M$ defined as
-        \begin{equation}
-            g(X_p,Y_p)=\omega(X_p,JY_p)
-        \end{equation}
-        is symmetric and positive-definite. In other words, $g$ is a riemannian metric. Given a symplectic structure and a compatible almost complex structure therefore naturally provides us with a riemannian structure too. The component of the metric are, logically, fully determined by the ones of the symplectic form:
-        \begin{equation}
-            g_{a\bar{b}}=\p_a\p_{\bar{b}}K
-        \end{equation}
-        in terms of local holomorphic coordinates $(z^a,\bz^a)$ and were $K$ defines the symplectic form (see \eqref{eq:Kählerpot}). For such a metric, one can show that the only non-vanishing coefficient of the Levi-Civita connection are
-        \begin{align}
-            \Gamma^a_{bc} &= g^{a\bar{d}}\p_bg_{c\bar{d}},\\
-            \Gamma^{\bar{a}}_{\bar{b}\bar{c}} &= g^{\bar{a}d}\p_{\bar{b}}g_{d\bar{c}}.
-        \end{align}
-        
-        The condition $\omega(JX,JY)=\omega(X,Y)$ also says that under the decomposition
-        \begin{equation}
-            \Omega^2(M) = \Omega^{2,0}\oplus\Omega^{1,1}\oplus\Omega^{0,2}
-        \end{equation}
-        of $2$-forms into their holomorphic and antiholomorphic parts, the symplectic form $\omega$ actually lies in $\Omega^{1,1}$.
-    
-        \begin{defn}
-            A \emph{Kähler manifold}\index{manifold!Kähler} is a symplectic manifold equipped with a compatible, integrable almost complex structure.
-        \end{defn}
-        A Kähler manifold is therefore the union of three structures: a riemannian structure, a symplectic structure and a complex structure. It is the fact the we are provided with a compatible complex structure that allows us to construct a metric from the symplectic form. We can therefore use the three points of view at will. 
-        
-        A very important fact is that the data the three structure $J,\omega$ and $g$ form a triangle and that the data of any two vertex uniquely fixes the last one:
-        \begin{prop}
-            Given any two out of the three structures (complex structure $J$, symplectic form $\omega$, metric $g$), it uniquely fixes the last one by imposing compatibility.
-        \end{prop}
-        
-        For real manifolds, the Poincaré lemma states that any closed form is locally exact. On a complex manifold, we have the decomposition
+        in the space of $(p,q)$-forms on $M$. This is the \emph{Hodge decomposition}\index{Hodge decomposition}. We have the decomposition
         \begin{equation}
             \d= \p + \bp
         \end{equation}
@@ -363,20 +304,89 @@
         \begin{equation}
             \p^2=0,\qquad \p\bp+\bp\p=0,\qquad \bp^2=0.
         \end{equation}
-        In particular, for a closed form $\omega$, one must have $\p\omega=0$ and $\bp\omega=0$ separately. Combined with the Poincaré lemma, on finds that the symplectic form can always be locally written as
+        The usual de Rham cohomology also undergoes this splitting, giving rise to the Dolbeault cohomology.
+
+        In a local holomorphic chart $\phi=(z^1,\dots,z^n):U\subset M\to\C^n$, one has distinguished real coordinates $(x^{1},\dots ,x^{n},y^{1},\dots ,y^{n})$ defined by $z^j=x^j+iy^j$ for each $j=1,\dots,n$. These give complex-valued vector fields (that is, sections of the complexified tangent bundle),
+        \begin{equation}
+            \pdv{}{z^j}=\frac{1}{2}\left( \pdv{}{x^j}-i\pdv{}{y^j} \right),\qquad \pdv{}{\bz^j}=\frac{1}{2}\left( \pdv{}{x^j}+i\pdv{}{y^j} \right).
+        \end{equation}
+        Taken together, these vector fields form a frame for $TM\otimes \mathbb{C}|_U$, the restriction of the complexified tangent bundle to $U$. As such, these vector fields also split the complexified tangent bundle into two subbundles
+        \begin{equation}
+            T^{1,0}M|_U\equiv\text{span}\left\{\pdv{}{z^j}\right\},\qquad  T^{0,1}M|_U\equiv\text{span}\left\{\pdv{}{\bz^j}\right\}.
+        \end{equation}
+        Under a holomorphic change of coordinates, these two subbundles of $TM\otimes \mathbb{C}|_U$ are preserved, and so by covering $M$ by holomorphic charts one obtains a splitting of the complexified tangent bundle. This is precisely the splitting into the holomorphic and anti-holomorphic tangent bundles previously described. From this perspective, the name holomorphic tangent bundle becomes transparent because the transition functions for the holomorphic tangent bundle are also holomorphic. Thus the holomorphic tangent bundle is a genuine holomorphic vector bundle.
+
+        Dual to those vector fields, are complex-valued one-forms $\d z^j=\d x^j+i\d y^j,\d\bar{z}^j=\d x^j-i\d y^j$ on $U$. In terms of components, the Hodge decomposition tells us that any $\omega\in\Omega^{(p,q)}(M)$ can be written as
+        \begin{equation}
+            \omega = \omega_{a_1\dots a_p\bar{b}_1\dots\bar{b}_q}(z,\bz)~\d z^{a_1}\wedge\dots\wedge \d z^{a_p}\wedge \d\bz^{\bar{b}_1}\wedge\dots\wedge \d\bz^{\bar{b}_q}
+        \end{equation}
+        where the functions $\omega_{a_1\dots a_p\bar{b}_1\dots\bar{b}_q}(z,\bz)$ have $p$ holomorphic and $q$ antiholomorphic indices. 
+        
+        
+
+    \subsection{Kähler structure}
+
+        \begin{defn}
+            An almost complex structure $J$ is said to be \emph{compatible}\index{almost complex structure!compatible} with the symplectic form $\omega$ if 
+            \begin{equation*}
+                \omega(JX,JY) = \omega(X,Y)
+            \end{equation*}
+            for all $X,Y\in TM$.
+        \end{defn}
+        This compatibility condition has two very important consequences:
+        \begin{prop}
+            If $J$ is compatible with $\omega$, then the bilinear form $g$ on the tangent space of $M$ defined as
+            \begin{equation}
+                g_p(X_p,Y_p)=\omega_p(X_p,JY_p)\label{eq:kahlermetric}
+            \end{equation}
+            is symmetric, positive-definite and non-degenerate. In other words, $g$ is a riemannian metric.
+        \end{prop}
+        This implies that given a symplectic structure and a compatible almost complex structure, we also naturally have riemannian structure. We now have every thing in hand to define the notion of Kähler manifold.
+        \begin{defn}
+            A \emph{Kähler manifold}\index{manifold!Kähler} $(M,\omega,J)$, is a symplectic manifold $(M,\omega)$ equipped with a compatible, integrable almost complex structure $J$.
+        \end{defn}
+        A Kähler manifold is therefore the union of three structures: a riemannian structure, a symplectic structure and a complex structure. It is the fact the we are provided with a compatible complex structure that allows us to construct a metric from the symplectic form. We can therefore use the three points of view at will.
+
+        Even though we started with an symplectic structure $\omega$ and a compatible almost complex structure $J$ to induce a riemannian structure $g$, we do not have to proceed in that order. Indeed, an important fact about Kähler manifolds is that the data of any two structure out of $\omega,J$ and $g$ uniquely fixes the last one.
+        \begin{prop}
+            Given any two out of the three structures (complex structure $J$, symplectic form $\omega$, metric $g$), it uniquely fixes the last one by imposing compatibility.
+        \end{prop}
+        We could therefore have made other equivalent choices for our definition.
+        
+        The second important consequence of the compatibility condition is the following.
+        \begin{prop}
+            The condition $\omega(JX,JY)=\omega(X,Y)$ also says that under the decomposition
+            \begin{equation}
+                \Omega^2(M) = \Omega^{2,0}\oplus\Omega^{1,1}\oplus\Omega^{0,2}
+            \end{equation}
+            of $2$-forms into their holomorphic and antiholomorphic parts, the symplectic form $\omega$ actually lies in $\Omega^{1,1}$.
+        \end{prop}
+        In particular, one must have $\p\omega=0$ and $\bp\omega=0$ separately. The complex version of the Poincaré lemma therefore states that $\omega$ can always be locally written as
         \begin{equation}\label{eq:Kählerpot}
             \omega = i\p\bp K 
         \end{equation}
-        for some function $K$, on the Kähler manifold. Notice that $K$ is defined up to the transformations
+        for some function $K\in C^\infty (M,\C)$.
+        \begin{defn}
+            The function $K$ locally defining the symplectic form on a Kähler manifold as in (\ref{eq:Kählerpot}) is called the \emph{Kähler potential}\index{Kähler potential}.
+        \end{defn}
+        Notice that $K$ is defined up to the transformations
         \begin{equation}
             K(z,\bz)\mapsto K(z,\bz)+f(z)+f(\bz)
         \end{equation}
         where $f$ is holomorphic.
-        \begin{defn}
-            The function $K$ locally defining the symplectic form on a Kähler manifold as in (\ref{eq:Kählerpot}) is called the \emph{Kähler potential}\index{Kähler potential}.
-        \end{defn}
+        
+        
+        Since the metric is determined by the symplectic form, see \eqref{eq:kahlermetric} and that the symplectic form is determined Kähler potential,   the components of the metric  are also fully determined by the Kähler potential:
+        \begin{equation}
+            g_{a\bar{b}}=\p_a\p_{\bar{b}}K
+        \end{equation}
+        in terms of local holomorphic coordinates $(z^a,\bz^a)$ and were $K$ defines the symplectic form. For such a metric, one can show that the only non-vanishing coefficient of the Levi-Civita connection are
+        \begin{align}
+            \Gamma^a_{bc} &= g^{a\bar{d}}\p_bg_{c\bar{d}},\\
+            \Gamma^{\bar{a}}_{\bar{b}\bar{c}} &= g^{\bar{a}d}\p_{\bar{b}}g_{d\bar{c}}.
+        \end{align}
         \begin{result}
-            A symplectic structure on a complex manifold implies that the symplectic form necessarily comes from a Kähler potential. The latter is defined up to translation by holomorphic or antiholomorphic functions.
+            A symplectic structure on a complex manifold implies that the symplectic form necessarily comes from a Kähler potential, and so does the metric. The Kähler potential is defined up to translation by holomorphic or antiholomorphic functions.
         \end{result}
         
         \begin{examp}
