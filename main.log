@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  10 JAN 2023 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  11 JAN 2023 10:47
 entering extended mode
 **"/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, K^^c3^^a4hler, Hyperk^^c3^^a4hler geometry and their quotients/main.tex"
 (/home/louan/Documents/LaTeX/Worksheets/Worksheet on Symplectic, K^^c3^^a4hler, Hyperk^^c3^^a4hler geometry and their quotients/main.tex
@@ -1515,172 +1515,172 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 Package hyperref Info: bookmark level for unknown examp defaults to 0 on input line 116.
  [3] [4] [5] [6] [7] [8] [9]
 LaTeX Font Info:    Freeze math alphabet allocation in version normal.
-(Font)              Allocated math groups: 14 (local: 2) on input line 453.
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 453.
+(Font)              Allocated math groups: 14 (local: 2) on input line 461.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 461.
  (/home/louan/.miktex/texmfs/install/tex/latex/bbm/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input line 453.
-LaTeX Font Info:    Undo math alphabet allocation in version normal on input line 454.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 455.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 456.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 457.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 457.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 457.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 459.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 459.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 461.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 461.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 461.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 461.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 462.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 462.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 462.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 462.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input line 461.
+LaTeX Font Info:    Undo math alphabet allocation in version normal on input line 462.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 463.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 464.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 464.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 468.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 468.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 468.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 468.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 468.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 465.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 465.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 465.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 467.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 467.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 469.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 469.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 469.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 469.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 470.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 475.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 472.
+Package hyperref Info: bookmark level for unknown remark defaults to 0 on input line 476.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 476.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 476.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 476.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 477.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 477.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 477.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 477.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 479.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 479.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 482.
- [10]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 476.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 478.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 483.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 484.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 484.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 484.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 485.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 485.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 485.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 485.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 487.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 487.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 490.
+ [10]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 498.
 
 
-LaTeX Warning: Reference `sec:ALEhyperkahlerquot' on page 11 undefined on input line 490.
+LaTeX Warning: Reference `sec:ALEhyperkahlerquot' on page 11 undefined on input line 498.
 
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 492.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 492.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 492.
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 494.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 499.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 499.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 510.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 510.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 511.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 511.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 512.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 512.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 513.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 513.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 515.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 515.
-
-LaTeX Warning: Reference `sec:quotmanifold' on page 11 undefined on input line 519.
-
-
-LaTeX Warning: Reference `sec:quotkahler' on page 11 undefined on input line 519.
-
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 500.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 500.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 500.
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 502.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 507.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 507.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 518.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 518.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 519.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 519.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 520.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 520.
 [11]
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 521.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 525.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 525.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 525.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 525.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 525.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 525.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 525.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 525.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 523.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 523.
+
+
+LaTeX Warning: Reference `sec:quotmanifold' on page 12 undefined on input line 527.
+
+
+LaTeX Warning: Reference `sec:quotkahler' on page 12 undefined on input line 527.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
-
-
-LaTeX Warning: Reference `sec:momentummap' on page 12 undefined on input line 529.
-
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 530.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 530.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 530.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 530.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 532.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 532.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 529.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 533.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 535.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 535.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 535.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 535.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 535.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 535.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 536.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 536.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 536.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 536.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 533.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 533.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 533.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 533.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 533.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 533.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 533.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 537.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 537.
+
+LaTeX Warning: Reference `sec:momentummap' on page 12 undefined on input line 537.
+
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 538.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 538.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 538.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 538.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 540.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 540.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 541.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 541.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 541.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 541.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 541.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 541.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 543.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 543.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 543.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 543.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 543.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 543.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 544.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 544.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 544.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 544.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 546.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input line 546.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 548.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 549.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 549.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 549.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 549.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 549.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 549.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 552.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 552.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 552.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 552.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 554.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 554.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 556.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 548.
+(hyperref)                removing `math shift' on input line 556.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 548.
+(hyperref)                removing `math shift' on input line 556.
 
-LaTeX Font Info:    No math alphabet change to frozen version normal on input line 550.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 550.
-
+LaTeX Font Info:    No math alphabet change to frozen version normal on input line 558.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 550.
+(hyperref)                removing `math shift' on input line 558.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 558.
 
 [12] (main.aux)
 
@@ -1693,13 +1693,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51003 strings out of 478362
- 1122536 string characters out of 2842112
- 1935751 words of memory out of 3000000
- 68314 multiletter control sequences out of 15000+600000
+ 51006 strings out of 478362
+ 1122571 string characters out of 2842112
+ 1936791 words of memory out of 3000000
+ 68315 multiletter control sequences out of 15000+600000
  495895 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  115i,14n,118p,1310b,1825s stack positions out of 10000i,1000n,20000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
@@ -1710,10 +1712,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
- </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1440.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (12 pages, 354038 bytes).
+ </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm10.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1440.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (12 pages, 379289 bytes).
 PDF statistics:
- 747 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
+ 769 PDF objects out of 1000 (max. 8388607)
+ 171 named destinations out of 1000 (max. 500000)
  141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
